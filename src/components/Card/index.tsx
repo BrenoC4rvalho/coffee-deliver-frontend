@@ -1,7 +1,7 @@
 import { useTheme } from 'styled-components'
-import { CoffeeImg, Container, Description, Order, Price, Tags, Title } from './styles'
+import { CoffeeImg, Container, Control, Description, Order, Price, Tags, Title } from './styles'
 import { useState } from 'react'
-import { CheckFat, Control, ShoppingCart } from '@phosphor-icons/react'
+import { CheckFat, ShoppingCart } from '@phosphor-icons/react'
 import { QuantityInput } from '../Form/QuantityInput'
 
 type Props = {
