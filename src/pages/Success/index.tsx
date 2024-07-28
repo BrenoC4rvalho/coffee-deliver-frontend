@@ -10,9 +10,9 @@ export function Success() {
   const { orderId } = useParams()
   const orderInfo = orders.find((order) => order.id === Number(orderId))
   const paymentMethod = {
-    credit: 'Cartão de crédito',
-    debit: 'Cartão de débito',
-    cash: 'Dinheiro',
+    credit: 'Debit Card',
+    debit: 'Credit Card',
+    cash: 'Money',
   }
   const theme = useTheme()
 
@@ -24,8 +24,8 @@ export function Success() {
     <Container>
       <Order>
         <Heading>
-          <h2>Uhu! Pedido confirmado</h2>
-          <span>Agora é só aguardar que logo o café chegará até você</span>
+          <h2>Woohoo! Order confirmed</h2>
+          <span>Now just wait and the coffee will soon reach you.</span>
         </Heading>
 
         <Info>
@@ -39,7 +39,7 @@ export function Success() {
 
               <div>
                 <span>
-                  Entrega em{' '}
+                  Delivery in{' '}
                   <strong>
                     {orderInfo.street}, {orderInfo.number}
                   </strong>
@@ -59,9 +59,9 @@ export function Success() {
               />
 
               <div>
-                <span>Previsão de entrega</span>
+                <span>Delivery forecast</span>
 
-                <strong>20 min - 30 min</strong>
+                <strong>45 min - 50 min</strong>
               </div>
             </div>
 
@@ -73,7 +73,7 @@ export function Success() {
               />
 
               <div>
-                <span>Pagamento na entrega</span>
+                <span>Payment on delivery</span>
 
                 <strong>{paymentMethod[orderInfo.paymentMethod]}</strong>
               </div>
@@ -82,7 +82,7 @@ export function Success() {
         </Info>
       </Order>
 
-      <img src="/images/delivery.svg" alt="Pedido concluído" />
+      <img src="/images/delivery.svg" alt="Order completed" />
     </Container>
   )
 }
