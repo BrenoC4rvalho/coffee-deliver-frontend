@@ -6,9 +6,9 @@
 ----------
 <img src="./images/2.png" width="600px"></img>
 ----------
-c<img src="./images/3.png" width="600px"></img>
+<img src="./images/3.png" width="600px"></img>
 ----------
-c<img src="./images/4.png" width="600px"></img>
+<img src="./images/4.png" width="600px"></img>
 
 
 ## 🧑‍💻 Tecnologias usadas
